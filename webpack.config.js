@@ -6,7 +6,7 @@ const DIST_DIR = path.resolve(__dirname, 'dist');
 module.exports = {
     entry: './app.js',
     output: {
-        path: DIST_DIR,
+        path: '/',
         filename: 'bundle.js'
     },
     plugins: [
