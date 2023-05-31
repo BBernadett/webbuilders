@@ -1,7 +1,6 @@
 {
   "name": "webuilders",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "repository": {
     "url": "git+https://github.com/BBernadett/webbuilders.git"
@@ -30,5 +29,10 @@
   "dependencies": {
     "gh-pages-webpack-plugin": "^1.0.2",
     "zizi-card": "^1.0.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/BBernadett/webbuilders/issues"
+  },
+  "homepage": "https://github.com/BBernadett/webbuilders#readme",
+  "description": ""
 }
