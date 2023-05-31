@@ -1,6 +1,7 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const GhPagesWebpackPlugin = require('gh-pages-webpack-plugin');
+const ghpages = require('gh-pages'); 
+ghpages.publish('dist', function(err) {}); 
 
 const DIST_DIR = path.resolve(__dirname, 'dist');
 
@@ -15,16 +16,6 @@ module.exports = {
             patterns: [
                 { from: './index.html', to: DIST_DIR }
             ]
-        }), 
-        new GhPagesWebpackPlugin({
-            path: './public',
-            options: {
-                message: 'Update Home Page',
-                user: {
-                    name: 'BBernadett',
-                    email: 'dettus.bb@gmail.com'
-                }
-            }
         })
     ],
     module: {

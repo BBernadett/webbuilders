@@ -10,7 +10,7 @@
     "build": "webpack --config webpack.config.js",
     "serve": "wds --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run build",
+    "predeploy": "npm run dist:build",
     "deploy": "gh-pages -d dist",
     "init": "webpack --mode=development"
   },
